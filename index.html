@@ -23,7 +23,7 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
 
-    <!-- FontAwesome for Telegram Icon -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -152,8 +152,8 @@
             letter-spacing: 0.3px;
         }
 
-        /* Telegram Hover Button */
-        .telegram-btn {
+        /* Download App Button */
+        .download-btn {
             position: relative;
             display: inline-flex;
             align-items: center;
@@ -161,6 +161,7 @@
             gap: 12px;
             width: 100%;
             max-width: 380px;
+            margin: 0 auto; /* सेंटर करने के लिए */
             background: linear-gradient(135deg, #0088cc 0%, #00a8ff 100%);
             color: #ffffff;
             font-size: 18px;
@@ -177,13 +178,13 @@
             cursor: pointer;
         }
 
-        .telegram-btn i {
+        .download-btn i {
             font-size: 22px;
             transition: transform 0.3s ease;
         }
 
         /* Light Sweep Effect */
-        .telegram-btn::before {
+        .download-btn::before {
             content: '';
             position: absolute;
             top: 0;
@@ -200,21 +201,21 @@
         }
 
         /* Hover & Active States */
-        .telegram-btn:hover {
+        .download-btn:hover {
             transform: translateY(-3px) scale(1.02);
             box-shadow: 0 12px 35px rgba(0, 136, 204, 0.6);
             background: linear-gradient(135deg, #0099e6 0%, #1ab1ff 100%);
         }
 
-        .telegram-btn:hover::before {
+        .download-btn:hover::before {
             left: 100%;
         }
 
-        .telegram-btn:hover i {
-            transform: translateX(4px) rotate(-10deg) scale(1.15);
+        .download-btn:hover i {
+            transform: translateY(3px) scale(1.15);
         }
 
-        .telegram-btn:active {
+        .download-btn:active {
             transform: translateY(1px) scale(0.98);
             box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
         }
@@ -253,7 +254,7 @@
             .description {
                 font-size: 14px;
             }
-            .telegram-btn {
+            .download-btn {
                 font-size: 16px;
                 padding: 16px 24px;
             }
@@ -290,10 +291,10 @@
             </div>
         </div>
 
-        <!-- Telegram Button with Link -->
-        <a href="https://t.me/+givnDyULj89jMGE1" target="_blank" class="telegram-btn">
-            <i class="fa-brands fa-telegram"></i>
-            <span>JOIN CHANNEL</span>
+        <!-- Download App Button -->
+        <a href="https://t.me/+givnDyULj89jMGE1" target="_blank" class="download-btn">
+            <i class="fa-solid fa-download"></i>
+            <span>DOWNLOAD APP</span>
         </a>
 
         <!-- Agency Credit Footer -->
